@@ -42,24 +42,20 @@ allTextRevealWrappers.forEach(elem => {
 /**
   * Script for word flick on hero-subtitle
   */
-var words = ["Software_Engineer", "Unity_Developer", "Full_Stack_Engineer", "True_Seal_Enthusiast"];
-    
-var part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70,
-    cursor = '|';
 
 var wordflick = function () {
+  let i = 0;
+  let words = ["Software_Engineer", "Unity_Developer", "Full_Stack_Engineer", "True_Seal_Enthusiast"];
+  let part,
+      offset = 0,
+      len = words.length,
+      forwards = true,
+      skip_count = 0,
+      skip_delay = 15,
+      speed = 70,
+      cursor = '|';
   setInterval(function () {
-    console.log(i);
     if (forwards) {
-      console.log(i);
-      console.log(words[i]);
       if (offset >= words[i].length) {
         ++skip_count;
         if (skip_count == skip_delay) {
@@ -93,7 +89,6 @@ var wordflick = function () {
 };
 
 if (document.querySelector('.hero-subtitle')){
-  console.log("loading wordflick");
   document.addEventListener('DOMContentLoaded', wordflick);
 }
 

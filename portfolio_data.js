@@ -43,15 +43,15 @@ function populatePortfolioDetails(){
 }
 
 function populatePortfolioRow(){
-    var portfolio_row = document.getElementById("portfolio-row");
-    var row_html = "";
+    let portfolio_row = document.getElementById("portfolio-row");
+    let row_html = "";
     
-    for (var i = 0; i < portfolio_data.length; i++){
-        var title = portfolio_data[i].title;
-        var category = portfolio_data[i].category;
-        var date = portfolio_data[i].date;
-        var img_path = portfolio_data[i].img_path;
-        var details_path = portfolio_data[i].details_path;
+    for (let i = 0; i < portfolio_data.length; i++){
+        let title = portfolio_data[i].title;
+        let category = portfolio_data[i].category;
+        let date = portfolio_data[i].date;
+        let img_path = portfolio_data[i].img_path;
+        let details_path = portfolio_data[i].details_path;
     
         row_html = row_html + 
         `<div class="col-md-4">
@@ -86,10 +86,10 @@ function populatePortfolioRow(){
   * parses a query string and returns a dictionary
   */
 function parseQuery(queryString) {
-    var query = {};
-    var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
-    for (var i = 0; i < pairs.length; i++) {
-        var pair = pairs[i].split('=');
+    let query = {};
+    let pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+    for (let i = 0; i < pairs.length; i++) {
+        let pair = pairs[i].split('=');
         query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
     }
     return query;

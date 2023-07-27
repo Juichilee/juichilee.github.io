@@ -65,18 +65,18 @@ var timeline_data = [
 var timeline_container = document.getElementById("timeline-container");
 var count = 0;
 var container_html = ""
-for (var i = 0; i < timeline_data.length; i++){
-
-    desc_arr = timeline_data[i].desc;
-    var less_desc = ""
-    var more_desc = ""
-    var read_more_btn = ""
+for (let i = 0; i < timeline_data.length; i++){
+    let desc_arr = timeline_data[i].desc;
+    let pos = 'right';
+    let less_desc = ""
+    let more_desc = ""
+    let read_more_btn = ""
     if (desc_arr.length == 1){
         less_desc = desc_arr[0];
     }else if (desc_arr.length > 1){
         less_desc = `<li>${desc_arr[0]}</li>`;
         more_desc = `<span class="dots">...</span><span class="more">`
-        for (var j = 1; j < desc_arr.length; j++){
+        for (let j = 1; j < desc_arr.length; j++){
         more_desc = more_desc + `<li>${desc_arr[j]}</li>`
         }
         more_desc = more_desc + "</span>"
@@ -84,9 +84,7 @@ for (var i = 0; i < timeline_data.length; i++){
     }
 
     if (count % 2 == 0){
-        var pos = 'left'
-    }else{
-        var pos = 'right'
+        pos = 'left'
     }
 
     container_html = container_html +
