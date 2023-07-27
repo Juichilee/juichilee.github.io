@@ -9,8 +9,18 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --icon-color: #003459;
+  --background-color: #fbfbfb;
+  --text-color: #00171f;
+  --hover-color: #00a8e8;
+  --border-hover-color: #00a8e8;
+  --back-to-top-color: #008518;
+  --back-to-top-hover-color: #00c624;
+}
+
 body {
-  background-color: #f5f5f5;
+  background-color: var(--background-color);
   color: #4e4e4e;
 }
 
@@ -20,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: var(--text-color);;
 }
 
 /* animate elements if visible in viewport page scroll */
@@ -58,13 +68,13 @@ h6 {
 }
 
 a {
-  color: #1e1e1e;
+  color: var(--text-color);;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: var(--icon-color);
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -75,7 +85,7 @@ a:hover {
 
 .color-a {
   text-decoration: none;
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .color-d {
@@ -102,7 +112,7 @@ a:hover {
 .box-shadow-a,
 .button:hover {
   text-decoration: none;
-  box-shadow: 0 0 0 4px #cde1f8;
+  box-shadow: 0 0 0 4px var(--border-hover-color);;
 }
 
 .display-5 {
@@ -183,7 +193,7 @@ a:hover {
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: var(--text-color);;
   font-size: 1.1rem;
 }
 
@@ -207,7 +217,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   margin: 0 auto;
 }
 
@@ -225,7 +235,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   width: 100px;
   bottom: -12px;
 }
@@ -251,9 +261,6 @@ a:hover {
 }
 
 /*------/ Socials /------*/
-:root {
-  --icon-color: #206400;
-}
 
 .socials {
   padding: 1.5rem 0;
@@ -277,7 +284,7 @@ a:hover {
 .socials .ico-circle:hover {
   background-color: var(--icon-color);
   color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
+  box-shadow: 0 0 0 3px var(--border-hover-color);;
   transition: all 500ms ease;
 }
 
@@ -299,7 +306,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: var(--icon-color);
   margin-right: 10px;
 }
 
@@ -312,7 +319,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px var(--icon-color);
   display: block;
 }
 
@@ -330,15 +337,15 @@ a:hover {
   width: 18px;
   height: 7px;
   margin: 5px 5px;
-  background: #cde1f8;
-  border: 0px solid #cde1f8;
+  background: var(--border-hover-color);;
+  border: 0px solid var(--border-hover-color);;
   display: block;
   transition: all 0.6s ease-in-out;
   cursor: pointer;
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #cde1f8;
+  background-color: var(--border-hover-color);;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -357,7 +364,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   opacity: 0.7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -381,7 +388,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0078ff;
+  background: var(--back-to-top-color);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -390,13 +397,13 @@ a:hover {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--background-color);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #298eff;
-  color: #fff;
+  background: var(--back-to-top-hover-color);
+  color: var(--background-color);
 }
 
 .back-to-top.active {
@@ -422,7 +429,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid var(--icon-color);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -467,9 +474,9 @@ a:hover {
 
 .button-a {
   text-decoration: none;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   color: #fff;
-  border-color: #cde1f8;
+  border-color: var(--border-hover-color);;
 }
 
 .button-big {
@@ -628,7 +635,7 @@ a:hover {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .navbar .dropdown:hover>ul {
@@ -733,7 +740,7 @@ a:hover {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .navbar-mobile .getstarted,
@@ -768,7 +775,7 @@ a:hover {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -851,15 +858,15 @@ a:hover {
 
 .hero-single .breadcrumb {
   background-color: transparent;
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .hero-single .breadcrumb .breadcrumb-item:before {
-  color: #cde1f8;
+  color: var(--border-hover-color);;
 }
 
 .hero-single .breadcrumb .breadcrumb-item.active {
-  color: #cde1f8;
+  color: var(--border-hover-color);;
 }
 
 .hero-single .breadcrumb a {
@@ -869,7 +876,7 @@ a:hover {
 .hero-subtitle {
   .word {
     margin: auto;
-    color: white;
+    color: var(--background-color);
     font: 700 normal 2.5em 'tahoma';
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
   }
@@ -903,7 +910,7 @@ a:hover {
 }
 
 .skill-mf .progress {
-  background-color: #cde1f8;
+  background-color: var(--border-hover-color);;
   margin: 0.5rem 0 1.2rem 0;
   border-radius: 0;
   height: 0.7rem;
@@ -911,7 +918,7 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: 0.7rem;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
 }
 
 /*--------------------------------------------------------------
@@ -929,13 +936,13 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  background-color: var(--icon-color);
+  box-shadow: 0 0 0 10px var(--border-hover-color);;
 }
 
 .service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1e1e1e;
+  color: var(--text-color);;
 }
 
 .service-box .ico-circle {
@@ -961,16 +968,6 @@ a:hover {
   color: #4e4e4e;
 }
 
-.service-cert-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  image-rendering: pixelated;
-}
-
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
@@ -993,7 +990,7 @@ a:hover {
   height: 60px;
   width: 60px;
   line-height: 1.5;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px var(--border-hover-color);;
 }
 
 .counter-num .counter {
@@ -1019,13 +1016,13 @@ a:hover {
 
 /* The actual timeline (the vertical ruler) */
 .timeline-block{
-  background-color: #4e4e4e;
+  background-color: var(--icon-color);
   position: relative;
   height: 25px;
 }
 
 .timeline {
-  background-color: #4e4e4e;
+  background-color: var(--icon-color);
   position: relative;
   max-width: 100%;
 }
@@ -1037,9 +1034,9 @@ a:hover {
   top: -10px;
   left: 49.1%;
   z-index: 1;
-  border: medium solid white;
+  border: medium solid var(--background-color);
   border-width: 30px 10px 10px 10px ;
-  border-color: transparent transparent rgb(255, 255, 255) transparent ;
+  border-color: transparent transparent var(--background-color) transparent ;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -1047,7 +1044,7 @@ a:hover {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: var(--background-color);
   top: 30px;
   bottom: 30px;
   left: 50%;
@@ -1069,8 +1066,8 @@ a:hover {
   width: 25px;
   height: 25px;
   right: -12px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: var(--icon-color);
+  border: 4px solid var(--hover-color);
   top: 48px;
   border-radius: 50%;
   z-index: 1;
@@ -1095,9 +1092,9 @@ a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid var(--background-color);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent var(--background-color);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -1109,9 +1106,9 @@ a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid var(--background-color);
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent var(--background-color) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -1122,7 +1119,7 @@ a:hover {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--background-color);
   position: relative;
   border-radius: 6px;
 }
@@ -1149,9 +1146,9 @@ a:hover {
 /* Make sure that all arrows are pointing leftwards */
   .container-timeline::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--background-color);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--background-color) transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
@@ -1199,17 +1196,21 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: var(--icon-color);
   float: right;
 }
 
 .work-content .w-like a {
-  color: #0078ff;
+  color: var(--icon-color);
+}
+
+.work-content .w-like a:hover {
+  color: var(--hover-color);
 }
 
 .work-content .w-like .num-like {
@@ -1314,7 +1315,7 @@ a:hover {
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #0078ff;
+  color: var(--icon-color);
   background-color: #fff;
   width: 52px;
   height: 52px;
@@ -1422,7 +1423,7 @@ a:hover {
 
 .php-email-form input:focus,
 .php-email-form textarea:focus {
-  border-color: #0078ff;
+  border-color: var(--icon-color);
 }
 
 .php-email-form input {
@@ -1435,7 +1436,7 @@ a:hover {
 }
 
 .php-email-form button[type=submit] {
-  background: #0078ff;
+  background: var(--icon-color);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1484,7 +1485,7 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   border-radius: 4px;
 }
 
@@ -1553,7 +1554,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid var(--icon-color);
   margin-top: 1rem;
 }
 
@@ -1563,15 +1564,15 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul a {
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .blog-wrapper .post-meta ul span {
-  color: #1e1e1e;
+  color: var(--text-color);;
 }
 
 .blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid var(--icon-color);
   padding: 18px;
   font-style: italic;
 }
@@ -1608,11 +1609,11 @@ a:hover {
 }
 
 .box-comments .list-comments a {
-  color: #0078ff;
+  color: var(--icon-color);
 }
 
 .box-comments .list-comments span {
-  color: #1e1e1e;
+  color: var(--text-color);;
   font-style: italic;
 }
 
@@ -1624,7 +1625,7 @@ a:hover {
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
-  border-left: 5px solid #0078ff;
+  border-left: 5px solid var(--icon-color);
   padding-left: 15px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1641,7 +1642,7 @@ a:hover {
   width: 10px;
   height: 1px;
   left: 0;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   top: 20px;
 }
 
@@ -1652,8 +1653,8 @@ a:hover {
 }
 
 .sidebar-search .btn-search {
-  background-color: #0078ff;
-  border-color: #0078ff;
+  background-color: var(--icon-color);
+  border-color: var(--icon-color);
   border-radius: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1661,7 +1662,7 @@ a:hover {
 
 .widget-tags ul li {
   display: inline-block;
-  background-color: #0078ff;
+  background-color: var(--icon-color);
   padding: 0.2rem 0.6rem;
   margin-bottom: 0.5rem;
   border-radius: 15px;
