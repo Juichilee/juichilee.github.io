@@ -1,3 +1,4 @@
+{
 var portfolio_data = [
     {
         id: 0,
@@ -98,7 +99,7 @@ function populatePortfolioDetails(queryDict){
     portfolioDesc.innerHTML = 
     `<h2>Summary</h2>
     <p>
-      ${data.summary}
+        ${data.summary}
     </p>`;
 
 }
@@ -144,8 +145,8 @@ function populatePortfolioRow(){
 }
 
 /**
-  * parses a query string and returns a dictionary
-  */
+     * parses a query string and returns a dictionary
+     */
 function parseQuery(queryString) {
     let query = {};
     let pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
@@ -159,5 +160,4 @@ function parseQuery(queryString) {
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-
+}

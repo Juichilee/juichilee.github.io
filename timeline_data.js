@@ -1,4 +1,4 @@
-
+{
 // Array storing timeline data
 var timeline_data = [
     {
@@ -102,3 +102,5 @@ for (let i = 0; i < timeline_data.length; i++){
     count += 1;
 }
 timeline_container.innerHTML = container_html
+}
+
