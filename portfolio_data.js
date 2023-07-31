@@ -11,7 +11,10 @@ var portfolio_data = [
         img_path: "assets/img/portfolio/Hololens_Demo_Thumbnail.png",
         swiper_images: [
             "assets/img/portfolio/Hololens_Demo_Thumbnail.png",
-            "assets/img/post-1.jpg"
+            "assets/img/post-1.jpg",
+            "https://www.youtube.com/embed/WaGFP-GvLN8",
+            "https://www.youtube.com/embed/XJZkBpjPINg"
+
         ],
         links: {
             test: ["Test Demo Link", "https://youtu.be/WaGFP-GvLN8"],
@@ -75,9 +78,17 @@ function populatePortfolioDetails(queryDict){
 
     let swiperHTML = "";
     data.swiper_images.forEach(image_path => {
+        let inner = `<img class="swiper-images" src="${image_path}" alt="">`;
+        if (image_path.includes("https://www.youtube.com")){
+            inner = 
+            `<iframe src=${image_path} class="swiper-videos"
+            title="YouTube video player" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+            web-share" allowfullscreen></iframe>`;
+        }
         swiperHTML += 
         `<div class="swiper-slide">
-            <img src="${image_path}" alt="">
+            ${inner}
         </div>`;
     });
 
