@@ -33,6 +33,10 @@ h6 {
   color: var(--text-color);;
 }
 
+.container {
+  padding-bottom: 30px;
+}
+
 /* animate elements if visible in viewport page scroll */
 
 /* .reveal-text,
@@ -1166,6 +1170,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -1228,6 +1233,12 @@ a:hover {
 
 .portfolio-details {
   padding-top: 40px;
+}
+
+.portfolio-details-slider {
+  background-color: var(--background-color);
+  box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+  
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1361,6 +1372,7 @@ a:hover {
 
 .swiper-wrapper {
   position: relative;
+  padding-top: 50px;
   height: 500px;
 }
 
@@ -1370,10 +1382,24 @@ a:hover {
   height: 50px;
 }
 
+.swiper-img-title {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  top: -500px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.swiper-img-title h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
 .swiper-images {
   position: absolute;
-  top: -500px;
-  height: 500px;
+  top: -450px;
+  height: 450px;
 }
 
 .swiper-videos {
@@ -1387,7 +1413,7 @@ a:hover {
 
 .swipe-instruct {
   position: absolute;
-  top:450px;
+  top: 500px;
   right: 0;
   left: 0;
   height: 60px;
@@ -1399,7 +1425,7 @@ a:hover {
 }
 
 .swipe-instruct-text {
-  margin: auto;
+  margin: 15px auto;
   color: #fff;
 }
 
