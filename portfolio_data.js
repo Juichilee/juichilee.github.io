@@ -8,13 +8,20 @@ var portfolio_data = [
             date: "June, 2022",
             client: "OSU College of Engineering"
         },
-        summary: "I like seals",
-        img_path: "assets/img/portfolio/Hololens_Demo_Thumbnail.png",
+        summary: "The goal of the MR (Mixed-Reality) Inspection Tool is to augment human cognition \
+                    in manufacturing scenarios through the utilization of special hardware, such as \
+                    a MR headset, specialized camera, and a backend server. <br><br>MR Inspection Tool brings\
+                    together the separate functionalities of these components together to create a seamless\
+                    user experience. <br>With this system, users can be more informed of their surroundings \
+                    thanks to the real-time predictive capabilities of the machine-learning server, the accuracy of \
+                    the machine-learning result derived 3D projections, and the natural and intuitive methods of \
+                    controller-less interactions facilitated by the MR headset which can read certain hand gestures as input.",
+        img_path: "assets/img/portfolio/MR_Inspection_Tool/Hololens_Demo_Thumbnail.png",
         swiper_images: [
-            "assets/img/portfolio/Hololens_Demo_Thumbnail.png",
-            "assets/img/post-1.jpg",
-            "https://www.youtube.com/embed/WaGFP-GvLN8",
-            "https://www.youtube.com/embed/XJZkBpjPINg"
+            ["Final Demo Video", "https://www.youtube.com/embed/XJZkBpjPINg"],
+            ["Demo Thumbnail", "assets/img/portfolio/MR_Inspection_Tool/Hololens_Demo_Thumbnail.png"],
+            ["OSU Engineering Expo Poster", "assets/img/portfolio/MR_Inspection_Tool/MR_Inspection_Tool_Poster.jpg"],
+            ["Test Demo Video", "https://www.youtube.com/embed/WaGFP-GvLN8"]
 
         ],
         links: {
@@ -26,20 +33,22 @@ var portfolio_data = [
     },
     {
         id: 1,
-        title: "Lorem impsum dolor 2",
+        title: "Yelp Review Sentiment Analyzer",
         info: {
-            category: "Web Design 2",
-            date: "18 Sep. 2019",
-            client: "Seals"
+            category: "ML/NLP",
+            date: "June, 2023",
+            client: "Self Development"
         },
         summary: "I like seals 2",
-        img_path: "assets/img/work-2.jpg",
+        img_path: "assets/img/portfolio/Yelp_Review_Sentiment_Analyzer/yelp-reviews-filtered.png",
         swiper_images: [
-            "assets/img/portfolio-details-1.jpg",
-            "assets/img/portfolio-details-2.jpg",
-            "assets/img/portfolio-details-3.jpg"
+            ["Yelp Review Examples", "assets/img/portfolio/Yelp_Review_Sentiment_Analyzer/yelp-reviews-filtered.png"],
+            ["test", "assets/img/portfolio-details-2.jpg"],
+            ["test2", "assets/img/portfolio-details-3.jpg"]
         ],
-        links: [],
+        links: {
+            github: ["GitHub Repo Link", "https://github.com/Juichilee/Yelp-Review-Sentiment-Analyzer"]
+        },
         details_path: "portfolio-details.html?id=1"
     }
 ];
@@ -78,7 +87,9 @@ function populatePortfolioDetails(queryDict){
     }
 
     let swiperHTML = "";
-    data.swiper_images.forEach(image_path => {
+    data.swiper_images.forEach(image_array => {
+        let image_title = image_array[0];
+        let image_path = image_array[1];
         let inner = `<img class="swiper-images" src="${image_path}" alt="">`;
         if (image_path.includes("https://www.youtube.com")){
             inner = 
@@ -89,6 +100,9 @@ function populatePortfolioDetails(queryDict){
         }
         swiperHTML += 
         `<div class="swiper-slide">
+            <div class="swiper-img-title">
+                <h2>${image_title}</h2>
+            </div>
             ${inner}
         </div>`;
     });
