@@ -43,8 +43,8 @@ var portfolio_data = [
         img_path: "assets/img/portfolio/Yelp_Review_Sentiment_Analyzer/yelp-reviews-filtered.png",
         swiper_images: [
             ["Yelp Review Examples", "assets/img/portfolio/Yelp_Review_Sentiment_Analyzer/yelp-reviews-filtered.png"],
-            ["test", "assets/img/portfolio-details-2.jpg"],
-            ["test2", "assets/img/portfolio-details-3.jpg"]
+            ["Input Data", "assets/img/portfolio/Yelp_Review_Sentiment_Analyzer/input_data_example.png"],
+            ["Example Run", "assets/img/portfolio/Yelp_Review_Sentiment_Analyzer/example_run.png"]
         ],
         links: {
             github: ["GitHub Repo Link", "https://github.com/Juichilee/Yelp-Review-Sentiment-Analyzer"]
