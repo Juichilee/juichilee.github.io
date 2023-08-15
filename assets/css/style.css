@@ -1009,9 +1009,12 @@ a:hover {
   flex-wrap: nowrap;
   width: 100%;
   height: fit-content;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
 }
 
 .scrolling-div {
+  position:relative;
   overflow-y: auto;
   max-height: 500px;
 }
@@ -1022,21 +1025,38 @@ a:hover {
 .timeline-block{
   background-color: var(--icon-color);
   position: relative;
-  height: 25px;
+  height: 20px;
 }
 
 .timeline {
-  background-color: var(--icon-color);
+  /* background-color: var(--icon-color); */
   position: relative;
   max-width: 100%;
 }
+
+#timeline-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+
+/* #timeline-background img {
+  display: block;
+  -webkit-transform: scale(0.999);
+  transform: scale(0.999);
+  z-index: 999;
+} */
 
 /* Add arrows to the timeline top (pointing up) */
 .timeline::before {
   content: "";
   position: absolute;
   top: -10px;
-  left: 49.1%;
+  left: calc(50% - 10px);
   z-index: 1;
   border: medium solid var(--background-color);
   border-width: 30px 10px 10px 10px ;
@@ -1059,7 +1079,7 @@ a:hover {
 .container-timeline {
   padding: 30px 40px;
   position: relative;
-  background-color: inherit;
+  /* background-color: inherit; */
   width: 50%;
 }
 
@@ -1124,6 +1144,7 @@ a:hover {
 .content {
   padding: 20px 30px;
   background-color: var(--background-color);
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.5);
   position: relative;
   border-radius: 6px;
 }
