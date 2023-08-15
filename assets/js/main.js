@@ -45,14 +45,23 @@ allTextRevealWrappers.forEach(elem => {
 
 var wordflick = function () {
   let i = 0;
-  let words = ["Software_Engineer", "Unity_Developer", "Full_Stack_Engineer", "True_Seal_Enthusiast"];
+  let words = [`Line 1: vector<string> identity;`, 
+                `Line 2: identity.push_back(<b style="color:#5DE23C">"Software Engineer"</b>);`, 
+                `Line 3: identity.push_back(<b style="color:#5DE23C">"Unity Developer"</b>);`, 
+                `Line 4: identity.push_back(<b style="color:#5DE23C">"Full Stack Engineer"</b>);`, 
+                `Line 5: identity.push_back(<b style="color:#5DE23C">"Creative Problem Solver"</b>);`, 
+                `Line 6: identity.push_back(<b style="color:#5DE23C">"Fast Learner"</b>);`,
+                `Line 7: identity.push_back(<b style="color:#5DE23C">"Team Player"</b>);`,
+                `Line 8: identity.push_back(<b style="color:#5DE23C">"Leader"</b>);`
+                ];
   let part,
-      offset = 0,
+      orig_offset = 7;
+      offset = 7,
       len = words.length,
       forwards = true,
       skip_count = 0,
-      skip_delay = 15,
-      speed = 70,
+      skip_delay = 5,
+      speed = 60,
       cursor = '|';
   setInterval(function () {
     if (forwards) {
@@ -65,10 +74,10 @@ var wordflick = function () {
       }
     }
     else {
-      if (offset == 0) {
+      if (offset == orig_offset) {
         forwards = true;
         i++;
-        offset = 0;
+        offset = orig_offset;
         if (i >= len) {
           i = 0;
         }
@@ -80,11 +89,24 @@ var wordflick = function () {
         offset++;
       }
       else {
-        offset--;
+        offset = orig_offset;
       }
     }
+    if(i == 0){
+      $('.hero-subtitle').text(part + cursor);
+    }
+    else {
+      let last_char = part.slice(-1);
+      if(last_char == "<"){
+        while(words[i][offset-1] != ">"){
+          offset++;
+        }
+        part = words[i].substring(0, offset);
+      }
 
-    $('.hero-subtitle').text(part + cursor);
+      $('.hero-subtitle').html(part + cursor);
+    }
+    
   }, speed);
 };
 
