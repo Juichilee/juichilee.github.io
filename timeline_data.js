@@ -8,7 +8,7 @@ var timeline_data = [
              time off for maintaining and learning new skills and hobbies, personal project \
              development, and travelling to tourist hot spots."
         ],
-        img_path: "assets/img/travel_timeline_photo.jpg"
+        img_path: "assets/img/travel-timeline.jpg"
     },
     {
         title: "Software Engineer Intern @ Intel (Jun. - Dec. 2022)",
@@ -25,39 +25,70 @@ var timeline_data = [
             following scrum and OKR.",
             "Wrote, validated, and debugged firmware system and unit tests using GoogleTest C++ Library."
         ],
-        img_path: "assets/img/intel_timeline_photo.jpg"
+        img_path: "assets/img/intel-timeline.jpg"
     },
     {
-        title: "Senior Capstone Project @ OSU (Sep. - Jun. 2022)",
+        title: "Project Lead for Mixed Reality Inspection Tool Hololens 2, and Graduation @ OSU (Sep. - Jun. 2022)",
         desc: [
             "Collaborated with project partner and 2 other capstone project members to research and develop\
-             a mixed-reality system empowered by machine learning for augmenting human cognition across \
-             manufacturing domains.",
+             a project called called Mixed Reality Inspection Tool, which aimed to augment human cognition \
+             through combining VR/MR technologies and Machine Learning, specifically computer vision, targeted for \
+             enterprise use in manufacturing domains.",
             "Volunteered as team lead and communicator between team and project partner.",
-            "Designed and implemented the system using Unity3D, Docker, Microsoft Mixed Reality Tool Kit, GitHub,\
-             and specialized hardware such as Intel RealSense and Microsoft HoloLens 2.",
+            "Implemented the system using C#, Unity3D, Docker, Microsoft MRTK,\
+             and specialized hardware such as Intel RealSense and Microsoft HoloLens 2 and their respective APIs.",
             "Performed requirements analysis, component research, architect design, prototyping, and testing and \
             debugging.",
-            "Presented finalized project at OSU’s 2022 Engineering Expo; during the 5-hour event, performed duties \
+            "Presented finalized project at OSU's 2022 Engineering Expo; during the 5-hour event, performed duties \
             such as providing project background, live demonstrations, and fielding questions from attendees and company judges."
         ],
-        img_path: "assets/img/work-2.jpg"
+        img_path: "assets/img/mr-inspection-tool-timeline.jpg"
     },
     {
-        title: "sample 2",
+        title: "Software Developer Intern @ Portland General Electric (Apr. - Sep. 2021)",
         desc: [
-            "less seals 2",
-            "more seals 2"
+            "Worked with 2 senior application development mentors to design, develop, test, and deploy various tools \
+            for supporting internal company workflows.",
+            "Designed and Developed a server-less application hosted on AWS that extracts, pre-processes, and stores data from PGE's local \
+            Oracle database to DynamoDB database and S3 and sends automated custom emails to update managers on \
+            the status of critical outages.",
+            "Detected and reported defects in the ETL pipeline",
+            "Designed and Developed an intuitive Python3 RESTful web application utilizing Flask, Boto3, AWS Lambda, DynamoDB, EC2, \
+            and API Gateway that enables non-IT employees to perform CRUD operations on internal database entries on the cloud",
+            "Led presentation of team's projects and their benefits to company officers, managers, and stakeholders",
         ],
-        img_path: "assets/img/work-2.jpg"
+        img_path: "assets/img/pge-timeline.jpg"
     },
     {
-        title: "sample 2",
+        title: "Unity VR Research Developer (Oct. 2019 - Dec. 2021)",
         desc: [
-            "less seals 2",
-            "more seals 2"
+            "Collaborated with 2 project managers on a sponsored manufacturing research grant to develop an interactive VR training \
+            simulation to teach users how to utilize a caliper in construction properly for the Oculus Quest",
+            "Assisted graduate students in developing an interactive VR training simulation for teaching users how to construct \
+            a light frame wall and a VR application for viewing the movement of network packets between endpoints in a 3D space",
+            "Wrote application logic in C# and integrated model, texture, and data assets in scenes",
+            "Actively participated in the communication between project leads and clients in negotiating technical requirements and\
+            project timeline",
+            "Actively participated in the communication between project leads and clients as the application developer"
         ],
-        img_path: "assets/img/work-2.jpg"
+        img_path: "assets/img/unity-vr-research-timeline.jpg"
+    },
+    {
+        title: "VR Research Assistant (Jul. - Oct. 2019)",
+        desc: [
+            "Conducted research and developed various vehicle and AI-related simulations in Unreal4 using Blueprints",
+            "Developed coding project tutorials to teach students how to set up autonomous entities in Unreal4",
+            "Developed a construction simulation in VR in Unity that replicated nailing wooden studs"
+        ],
+        img_path: "assets/img/vr-research-assistant-timeline.jpg"
+    },
+    {
+        title: "Computer Science Major @ OSU (Sep. 2018)",
+        desc: [
+            "Began my undergrad studies at Oregon State University majoring in computer science specializing in \
+            artificial intelligence and graphics."
+        ],
+        img_path: "assets/img/oregon-state.jpg"
     }
 ];
 
@@ -101,6 +132,6 @@ for (let i = 0; i < timeline_data.length; i++){
         </div>`;
     count += 1;
 }
-timeline_container.innerHTML = container_html
+timeline_container.innerHTML = timeline_container.innerHTML + container_html
 }
 
