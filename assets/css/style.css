@@ -824,6 +824,10 @@ a:hover {
   }
 }
 
+.hero-intro {
+  color: #fff;
+  font-weight: 600;
+}
 
 .hero .hero-subtitle {
   font-size: 1.5rem;
@@ -1040,7 +1044,8 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: 100% 100%;
+  background-image: url(../img/timeline-bg.jpg);
+  background-size: 100%;
   z-index: 0;
 }
 
@@ -1085,16 +1090,21 @@ a:hover {
 
 /* The circles on the timeline */
 .container-timeline::after {
-  content: '';
+  content: "";
+  background-image: url(../img/earth-icon.png);
+  background-size: 100% 100%;
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -12px;
-  background-color: var(--icon-color);
-  border: 4px solid var(--hover-color);
+  width: 40px;
+  height: 40px;
+  right: -20px;
   top: 48px;
   border-radius: 50%;
   z-index: 1;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -20px;
 }
 
 /* Place the container to the left */
@@ -1135,11 +1145,6 @@ a:hover {
   border-color: transparent var(--background-color) transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -13px;
-}
-
 /* The actual content */
 .content {
   padding: 20px 30px;
@@ -1178,7 +1183,7 @@ a:hover {
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 18px;
+    left: 11px;
   }
 
 /* Make all right containers behave like the left ones */
