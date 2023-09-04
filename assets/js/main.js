@@ -45,23 +45,20 @@ allTextRevealWrappers.forEach(elem => {
 
 var wordflick = function () {
   let i = 0;
-  let words = [`Line 1: vector<string> identity;`, 
-                `Line 2: identity.push_back(<b style="color:#5DE23C">"Software Engineer"</b>);`, 
-                `Line 3: identity.push_back(<b style="color:#5DE23C">"Unity Developer"</b>);`, 
-                `Line 4: identity.push_back(<b style="color:#5DE23C">"Full Stack Engineer"</b>);`, 
-                `Line 5: identity.push_back(<b style="color:#5DE23C">"Creative Problem Solver"</b>);`, 
-                `Line 6: identity.push_back(<b style="color:#5DE23C">"Fast Learner"</b>);`,
-                `Line 7: identity.push_back(<b style="color:#5DE23C">"Team Player"</b>);`,
-                `Line 8: identity.push_back(<b style="color:#5DE23C">"Leader"</b>);`
-                ];
+  let words = [
+                `a <b style="color:#00cc66">Software Developer</b>`,  
+                `a <b style="color:#00cc66">Creative Problem Solver</b>`, 
+                `a <b style="color:#00cc66">Fast Learner</b>`,
+                `a <b style="color:#00cc66">Team Player</b>`
+              ];
   let part,
-      orig_offset = 7;
-      offset = 7,
+      orig_offset = 0;
+      offset = 0,
       len = words.length,
       forwards = true,
       skip_count = 0,
       skip_delay = 5,
-      speed = 60,
+      speed = 90,
       cursor = '|';
   setInterval(function () {
     if (forwards) {
@@ -92,20 +89,15 @@ var wordflick = function () {
         offset = orig_offset;
       }
     }
-    if(i == 0){
-      $('.hero-subtitle').text(part + cursor);
-    }
-    else {
-      let last_char = part.slice(-1);
-      if(last_char == "<"){
-        while(words[i][offset-1] != ">"){
-          offset++;
-        }
-        part = words[i].substring(0, offset);
+    let last_char = part.slice(-1);
+    if(last_char == "<"){
+      while(words[i][offset-1] != ">"){
+        offset++;
       }
-
-      $('.hero-subtitle').html(part + cursor);
+      part = words[i].substring(0, offset);
     }
+
+    $('.hero-subtitle').html("I am " + part + cursor);
     
   }, speed);
 };
