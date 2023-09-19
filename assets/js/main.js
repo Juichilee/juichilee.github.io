@@ -46,10 +46,9 @@ allTextRevealWrappers.forEach(elem => {
 var wordflick = function () {
   let i = 0;
   let words = [
-                `a <b style="color:#00cc66">Software Developer</b>`,  
-                `a <b style="color:#00cc66">Creative Problem Solver</b>`, 
-                `a <b style="color:#00cc66">Fast Learner</b>`,
-                `a <b style="color:#00cc66">Team Player</b>`
+                `a <b style="color:#00cc66">Software Developer</b>`, 
+                `a <b style="color:#00cc66">Full Stack Developer</b>`,
+                `a <b style="color:#00cc66">Machine Learning Engineer</b>`
               ];
   let part,
       orig_offset = 0;
