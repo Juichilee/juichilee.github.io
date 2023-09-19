@@ -4,81 +4,92 @@ var timeline_data = [
     {
         title: "Travel/Hiatus (Jan. - Jun. 2023)",
         desc: [
-            "Family reunion with relatives in Taiwan to celebrate Chinese New Year, personal\
-             time off for maintaining and learning new skills and hobbies, personal project \
-             development, and travelling to tourist hot spots."
+            "Family reunion with relatives in Taiwan to celebrate Chinese New Year and personal\
+             time off for learning new skills and hobbies, and new project \
+             development"
         ],
         img_path: "assets/img/travel-timeline.jpg"
     },
     {
         title: "Software Engineer Intern @ Intel (Jun. - Dec. 2022)",
         desc: [
-            "Collaborated with firmware security architect and manager to develop a functional\
-             proof-of-concept for a planned product feature that involved utilizing a custom \
-             machine-learning pipeline to aid in FPGA design debugging.",
-            "Designed and implemented a highly customizable machine learning pipeline using \
-            Scikit-Learn, NumPy, and Pandas that preprocesses input data, trains and optimizes\
-             a list of classifiers, and exports trained models and test scores.",
-            "Led presentation and demo of machine learning prototype to senior firmware engineers, \
-            managers, and architects.",
-            "Worked with 2 firmware engineer mentors on FPGA firmware security-related projects, \
-            following scrum and OKR.",
-            "Wrote, validated, and debugged firmware system and unit tests using GoogleTest C++ Library."
+            "Collaborated with FPGA security architect and manager to develop a working prototype \
+            machine learning pipeline to automate the process of debugging customer FPGA designs, \
+            improving team productivity and project timelines.",
+            "Developed machine learning pipeline using Python3, Scikit-learn, NumPy, and Pandas, \
+            generating models with 86%-90% accuracy on test housing dataset.",
+            "Worked on firmware for securely loading and testing experimental features on FPGAs, \
+            ensuring client FPGA designs are safe from hackers.",
+            "Wrote and reenabled GoogleTest system and unit tests on the CI pipeline to validate production \
+            firmware features.",
+            "Participated in code reviews, improving overall code quality."
         ],
         img_path: "assets/img/intel-timeline.jpg"
     },
     {
         title: "Project Lead for Mixed Reality Inspection Tool Hololens 2, and Graduation @ OSU (Sep. - Jun. 2022)",
         desc: [
-            "Collaborated with project partner and 2 other capstone project members to research and develop\
-             a project called called Mixed Reality Inspection Tool, which aimed to augment human cognition \
-             through combining VR/MR technologies and Machine Learning, specifically computer vision, targeted for \
-             enterprise use in manufacturing domains.",
-            "Volunteered as team lead and communicator between team and project partner.",
-            "Implemented the system using C#, Unity3D, Docker, Microsoft MRTK,\
-             and specialized hardware such as Intel RealSense and Microsoft HoloLens 2 and their respective APIs.",
+            "Collaborated with project partner and 2 other capstone project members to research and develop a \
+            mixed-reality system informed by machine learning, improving the ability for humans to accurately \
+            detect certain objects.",
+            "Volunteered as team lead and communicator between team and project partner, iterating design based \
+            on project partner’s vision and feedback and completing every project deadline.",
             "Performed requirements analysis, component research, architect design, prototyping, and testing and \
-            debugging.",
-            "Presented finalized project at OSU's 2022 Engineering Expo; during the 5-hour event, performed duties \
-            such as providing project background, live demonstrations, and fielding questions from attendees and company judges."
+            debugging, ensuring that the user experience was consistent and bug-free.",
+            "Implemented the system using Unity3D, Microsoft Mixed Reality ToolKit, OpenXR, Docker, and specialized \
+            hardware such as Intel RealSense and Microsoft HoloLens 2.",
+            "Presented finalized project at OSU’s 2022 Engineering Expo; during the 5-hour event, performed duties \
+            such as providing project background and live demonstrations, drawing in and educating attendees on MR technologies."
         ],
         img_path: "assets/img/mr-inspection-tool-timeline.jpg"
     },
     {
         title: "Software Developer Intern @ Portland General Electric (Apr. - Sep. 2021)",
         desc: [
-            "Worked with 2 senior application development mentors to design, develop, test, and deploy various tools \
-            for supporting internal company workflows.",
-            "Designed and Developed a server-less application hosted on AWS that extracts, pre-processes, and stores data from PGE's local \
-            Oracle database to DynamoDB database and S3 and sends automated custom emails to update managers on \
-            the status of critical outages.",
-            "Detected and reported defects in the ETL pipeline",
-            "Designed and Developed an intuitive Python3 RESTful web application utilizing Flask, Boto3, AWS Lambda, DynamoDB, EC2, \
-            and API Gateway that enables non-IT employees to perform CRUD operations on internal database entries on the cloud",
-            "Led presentation of team's projects and their benefits to company officers, managers, and stakeholders",
+            "Implemented a serverless AWS application that pre-processes migrating data from PGE’s local Oracle \
+            database to DynamoDB and S3 and sends custom outage emails to managers, greatly reducing response time \
+            to critical outages.",
+            "Implemented a Python3 RESTful web application utilizing Flask that performs CRUD operations on the \
+            DynamoDB databases for storing settings, removing unnecessary overhead for authorized employees to \
+            modify database settings.",
+            "Designed and implemented an internal tool using SMTP, MIME, and Twilio API that automatically sends \
+            templatized emails and text messages to a list of clients, keeping them updated on outages",
+            "Designed and Developed an intuitive Python3 RESTful web application utilizing Flask, Boto3, AWS \
+            Lambda, DynamoDB, EC2, \
+            and API Gateway that enables non-IT employees to perform CRUD operations on internal database \
+            entries on the cloud",
+            "Assisted senior developers in updating Jenkins CI/CD pipeline files and automating the deployment \
+            process",
         ],
         img_path: "assets/img/pge-timeline.jpg"
     },
     {
         title: "Unity VR Research Developer (Oct. 2019 - Dec. 2021)",
         desc: [
-            "Collaborated with 2 project managers on a sponsored manufacturing research grant to develop an interactive VR training \
-            simulation to teach users how to utilize a caliper in construction properly for the Oculus Quest",
-            "Assisted graduate students in developing an interactive VR training simulation for teaching users how to construct \
-            a light frame wall and a VR application for viewing the movement of network packets between endpoints in a 3D space",
-            "Wrote application logic in C# and integrated model, texture, and data assets in scenes",
-            "Actively participated in the communication between project leads and clients in negotiating technical requirements and\
-            project timeline",
-            "Actively participated in the communication between project leads and clients as the application developer"
+            "Collaborated with 2 project managers on a sponsored manufacturing research project to \
+            develop an interactive VR training simulation using Unity and Oculus Quest, teaching \
+            manufacturing apprentices how to properly use a caliper",
+            "Assisted graduate student in developing a light frame wall construction VR simulation for \
+            teaching manufacturing apprentices",
+            "Assisted graduate student in developing a VR application for viewing the movement of \
+            network packets between endpoints in VR, helping a group of researchers working in quantum \
+            computing",
+            "Wrote application logic in C#, integrating physics and model, texture, and data assets in \
+            scenes",
+            "Actively participated in the communication between project leads and clients in negotiating \
+            technical requirements and project timeline, ensuring that the client is satisfied and the \
+            project is completed in a timely manner"
         ],
         img_path: "assets/img/unity-vr-research-timeline.jpg"
     },
     {
         title: "VR Research Assistant (Jul. - Oct. 2019)",
         desc: [
+            "Developed a physics-based VR construction simulation using Unity and C# that simulated \
+            nailing wooden studs for the Oculus Quest, assisting a graduate student with their VR manufacturing \
+            thesis",
             "Conducted research and developed various vehicle and AI-related simulations in Unreal4 using Blueprints",
-            "Developed coding project tutorials to teach students how to set up autonomous entities in Unreal4",
-            "Developed a construction simulation in VR in Unity that replicated nailing wooden studs"
+            "Developed coding project tutorials to teach students how to set up autonomous entities in Unreal4"
         ],
         img_path: "assets/img/vr-research-assistant-timeline.jpg"
     },
@@ -86,7 +97,7 @@ var timeline_data = [
         title: "Computer Science Major @ OSU (Sep. 2018)",
         desc: [
             "Began my undergrad studies at Oregon State University majoring in computer science specializing in \
-            artificial intelligence and graphics."
+            artificial intelligence and VR simulations."
         ],
         img_path: "assets/img/oregon-state.jpg"
     }
