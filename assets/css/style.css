@@ -814,13 +814,13 @@ a:hover {
 
 .hero .hero-title {
   color: #fff;
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight: 800;
+  font-size: 5rem;
 }
 
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 }
 
